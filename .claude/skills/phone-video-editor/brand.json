@@ -1,0 +1,7 @@
+{
+  "confirmed": false,
+  "note": "Placeholder brand used for the test clip. Ask the user once for their 2 colors and font, then replace these and set confirmed to true.",
+  "primary_color": "#FF3D7F",
+  "secondary_color": "#FFD23F",
+  "font": "Inter ExtraBold"
+}
