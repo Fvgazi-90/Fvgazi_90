@@ -7,6 +7,7 @@
   "secondary_color_name": "Lime",
   "font": "Permanent Marker",
   "font_file": "fonts/PermanentMarker-Regular.ttf",
-  "caption_style": "White words with a thick black outline; key words in Violet or Lime. Buttons and progress bar in Violet with white text.",
-  "ass_colors_note": "ASS uses &HBBGGRR: Violet = &HFF5C7B&, Lime = &H3DFFC6&"
+  "caption_style": "White words with a thick black outline; key words in bright Violet #A98BFF (captions only, easier to read) or Lime #C6FF3D. Buttons and progress bar use Violet #7B5CFF with white text.",
+  "ass_colors_note": "ASS uses &HBBGGRR: caption Violet #A98BFF = &HFF8BA9&, button Violet #7B5CFF = &HFF5C7B&, Lime = &H3DFFC6&",
+  "caption_violet": "#A98BFF"
 }
