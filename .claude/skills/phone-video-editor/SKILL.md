@@ -25,7 +25,7 @@ Never overwrite or modify the uploaded file. Always send back a NEW file with a 
 - Cut every pause longer than 0.5 seconds (use FFmpeg `silencedetect` to find them).
 
 ## 5. Make it look like them
-Brand settings live in `brand.json` next to this file. If the colors/font there are still marked `"confirmed": false`, ask ONE time for their 2 brand colors and a font, save the answer in `brand.json` with `"confirmed": true`, and commit it so you never ask again.
+Brand settings live in `brand.json` next to this file and are CONFIRMED: Electric palette, Violet #7B5CFF + Lime #C6FF3D, font Permanent Marker (file in `fonts/`; pass `fontsdir=` to FFmpeg's `ass`/`subtitles` filter). Do not ask for brand colors or font again unless the user wants to change them; if they do, update `brand.json` and commit it.
 
 ## 6. Export
 - Reels and TikTok: vertical 9:16, 1080x1920 (or the source's highest resolution), H.264 High, CRF 17-18, `-preset slow`, AAC 192k+, `-movflags +faststart`, keep the source frame rate.

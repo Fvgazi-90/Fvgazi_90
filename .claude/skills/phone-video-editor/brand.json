@@ -1,7 +1,12 @@
 {
-  "confirmed": false,
-  "note": "Placeholder brand used for the test clip. Ask the user once for their 2 colors and font, then replace these and set confirmed to true.",
-  "primary_color": "#FF3D7F",
-  "secondary_color": "#FFD23F",
-  "font": "Inter ExtraBold"
+  "confirmed": true,
+  "palette_name": "Electric",
+  "primary_color": "#7B5CFF",
+  "primary_color_name": "Violet",
+  "secondary_color": "#C6FF3D",
+  "secondary_color_name": "Lime",
+  "font": "Permanent Marker",
+  "font_file": "fonts/PermanentMarker-Regular.ttf",
+  "caption_style": "White words with a thick black outline; key words in Violet or Lime. Buttons and progress bar in Violet with white text.",
+  "ass_colors_note": "ASS uses &HBBGGRR: Violet = &HFF5C7B&, Lime = &H3DFFC6&"
 }
