@@ -16,10 +16,10 @@ The user only has a phone. They are the director. Keep every message short, plai
 Do all editing in your own cloud workspace. Check for the tools you need (FFmpeg, ffprobe, faster-whisper) and install anything missing yourself. Never ask the user to do anything technical.
 
 ## 3. Never change the original
-Never overwrite or modify the uploaded file. Always send back a NEW file with a new name, e.g. `myvideo_edit_v1.mp4`.
+Never overwrite or modify the uploaded file. Always send back a NEW file with a new name, e.g. `myvideo_edit_v1.mp4`. Save edits of the user's own footage in `exports/` (git-ignored): never commit their personal videos to the repo unless they ask.
 
 ## 4. Find retakes
-- First try Whisper (faster-whisper) to transcribe the video with word timestamps.
+- First try Whisper (faster-whisper, model `small`) to transcribe the video with word timestamps. Run with `HF_HUB_DISABLE_XET=1`, extract audio to 16 kHz mono WAV with FFmpeg, and pass it as a numpy array (the installed PyAV rejects file paths). The Fvgazi_90 cloud environment allows the Hugging Face hosts the model download needs.
 - If Whisper can't work (e.g. the model can't download), ask the user to paste the auto captions from Instagram, TikTok, or CapCut, and use those instead.
 - Keep only the BEST take of each sentence (usually the last clean one).
 - Cut every pause longer than 0.5 seconds (use FFmpeg `silencedetect` to find them).
