@@ -44,3 +44,12 @@ Check brightness (FFmpeg `signalstats`) and audio (`volumedetect`, `astats`). If
 
 ## 9. When finished
 Send the new video back with SendUserFile so they can download it, and remind them: "Watch it once all the way through before you post."
+
+## House style (learned from feedback: the first edit was rejected)
+- Fill the whole 9:16 frame with the speaker (crop, don't use blurred bars). Light denoise before upscaling.
+- Leave about 0.4 s of natural breath at each cut. Alternate a slight punch-in zoom on every other segment so jump cuts look intentional.
+- Captions: big ALL-CAPS, 2-3 words at a time, current word lights up Lime, key words Violet. Keep them on the chest, never over the mouth.
+- Keep graphics in the safe zone: nothing important in the bottom ~420 px (TikTok/IG buttons). Put end cards above the head.
+- Stickers and graphics in Lime with a dark outline so they don't vanish on purple backgrounds.
+- Audio: gentle denoise, light compression, around -15 LUFS. Avoid heavy noise reduction (it sounds robotic).
+- Check several frames yourself before sending.
